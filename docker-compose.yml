@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.1'
 services:
   build:
     build: ./build
@@ -19,8 +19,6 @@ services:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
     restart: always
-    ports:
-      - 8082:8080
     environment:
       MYSQL_ROOT_PASSWORD: 123
 volumes:
