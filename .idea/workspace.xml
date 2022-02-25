@@ -52,6 +52,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nekrasova\HW_12\build\config" />
       <recent name="C:\Users\nekrasova\HW_12" />
     </key>
   </component>
@@ -190,7 +191,28 @@
       <option name="project" value="LOCAL" />
       <updated>1645820629219</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="3">
+      <created>1645820804143</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1645820804143</updated>
+    </task>
+    <task id="LOCAL-00020" summary="3">
+      <created>1645821089521</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1645821089521</updated>
+    </task>
+    <task id="LOCAL-00021" summary="3">
+      <created>1645821151091</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1645821151091</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,11 +241,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="702" y="322" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645801780483" />
-    <state x="442" y="190" key="Vcs.Push.Dialog.v2" timestamp="1645820631792">
+    <state x="442" y="190" key="Vcs.Push.Dialog.v2" timestamp="1645821154661">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-1478" y="192" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/0.0.1920.1040@-1920.0.1536.832" timestamp="1645801858177" />
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645798940580" />
-    <state x="442" y="190" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1645820631792" />
+    <state x="442" y="190" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1645821154661" />
   </component>
 </project>
