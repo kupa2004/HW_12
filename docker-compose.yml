@@ -14,16 +14,14 @@ services:
       - db
     volumes:
       - Temp:/usr/local/tomcat/webapps
+      - Config:/usr/local/tomcat/webapps/ROOT
   db:
     image: mysql
     restart: always
     ports:
       - 8082:8080
     environment:
-      MYSQL_DATABASE: dd
       MYSQL_ROOT_PASSWORD: 123
-    volumes:
-       - Config:/etc/mysql/conf
 volumes:
   Config:
   Temp:
