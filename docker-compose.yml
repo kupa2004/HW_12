@@ -3,8 +3,8 @@ services:
   build:
     build: ./build
     volumes:
-      - Temp: /home/App42PaaS-Java-MySQL-Sample/target/
-      - Config: /home/App42PaaS-Java-MySQL-Sample/WebContent/
+      - Temp:/home/App42PaaS-Java-MySQL-Sample/target/
+      - Config:/home/App42PaaS-Java-MySQL-Sample/WebContent/
   web:
     image: tomcat:latest
     ports:
@@ -13,12 +13,15 @@ services:
       - main
       - db
     volumes:
-      - Temp: /usr/local/tomcat/webapps
-
+      - Temp:/usr/local/tomcat/webapps
   db:
     image: mysql-server
+    ports:
+      - 8082:8080
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
     volumes:
-     - Config: /usr/local/tomcat/webapps/ROOT/
+       - Config:/etc/mysql/conf
 volumes:
   Config:
   Temp:
