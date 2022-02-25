@@ -16,7 +16,6 @@ services:
       - Temp:/usr/local/tomcat/webapps
   db:
     image: mysql
-    command: --default-authentication-plugin=mysql_native_password
     restart: always
     ports:
       - 8082:8080
