@@ -1,6 +1,6 @@
 version: '3.1'
 services:
-  build:
+  builder:
     build: ./build
     volumes:
       - Temp:/home/App42PaaS-Java-MySQL-Sample/target/
@@ -16,7 +16,7 @@ services:
     ports:
       - 8082:8080
     depends_on:
-      - build
+      - builder
       - db
     volumes:
       - Temp:/usr/local/tomcat/webapps
