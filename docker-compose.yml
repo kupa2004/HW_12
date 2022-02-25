@@ -20,6 +20,7 @@ services:
     ports:
       - 8082:8080
     environment:
+      MYSQL_DATABASE: dd
       MYSQL_ROOT_PASSWORD: 123
     volumes:
        - Config:/etc/mysql/conf
