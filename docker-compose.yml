@@ -19,6 +19,6 @@ services:
       - db
     volumes:
       - Temp:/usr/local/tomcat/webapps
-      - /home/HW_12:/usr/local/tomcat/webapps/ROOT
+      - /home/HW_12/config:/usr/local/tomcat/webapps/ROOT
 volumes:
   Temp:
