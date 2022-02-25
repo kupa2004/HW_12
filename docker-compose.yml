@@ -17,12 +17,12 @@ services:
       - Config:/usr/local/tomcat/webapps/ROOT
   db:
     image: mysql
+    command: --default-authentication-plugin=mysql_native_password
     restart: always
     ports:
       - 8082:8080
     environment:
       MYSQL_ROOT_PASSWORD: 123
-    command: ["some", "command", "running", "root", "hw_12_db_1"]
 volumes:
   Config:
   Temp:
