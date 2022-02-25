@@ -5,4 +5,6 @@ WORKDIR /home
 RUN git clone https://github.com/shephertz/App42PaaS-Java-MySQL-Sample.git
 WORKDIR App42PaaS-Java-MySQL-Sample
 RUN mvn package
+WORKDIR WebContent
+
 CMD []

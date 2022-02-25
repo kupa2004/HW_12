@@ -1,16 +1,24 @@
 version: '3.9'
 services:
-  main:
+  build:
     build: ./build
     volumes:
-      - Temp:/home/App42PaaS-Java-MySQL-Sample/target/
+      - Temp: /home/App42PaaS-Java-MySQL-Sample/target/
+      - Config: /home/App42PaaS-Java-MySQL-Sample/WebContent/
   web:
-    build: ./run
+    image: tomcat:latest
     ports:
       - 8082:8080
     depends_on:
       - main
+      - db
     volumes:
-      - Temp:/usr/local/tomcat/webapps
+      - Temp: /usr/local/tomcat/webapps
+
+  db:
+    image: mysql-server
+    volumes:
+     - Config: /usr/local/tomcat/webapps/ROOT/
 volumes:
+  Config:
   Temp:
