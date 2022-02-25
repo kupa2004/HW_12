@@ -4,7 +4,7 @@ services:
     build: ./build
     volumes:
       - Temp:/home/App42PaaS-Java-MySQL-Sample/target/
-      - Config:/home/App42PaaS-Java-MySQL-Sample/
+      - Config:/home/HW_12/
   web:
     image: tomcat:latest
     ports:
