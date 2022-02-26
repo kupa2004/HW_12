@@ -23,6 +23,7 @@ services:
     volumes:
       - Temp:/usr/local/tomcat/webapps
       - /home/HW_12/config:/usr/local/tomcat/webapps/ROOT
+
 volumes:
   Temp:
   DBt:
