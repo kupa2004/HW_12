@@ -4,7 +4,7 @@ RUN apt-get install default-jdk -y default-jdk && apt-get install maven -y maven
 WORKDIR /home
 RUN git clone https://github.com/shephertz/App42PaaS-Java-MySQL-Sample.git
 WORKDIR App42PaaS-Java-MySQL-Sample/WebContent
-RUN rm Config.Properties
+RUN rm  Config.properties
 VOLUME ["/home/HW_12/config", "/home/App42PaaS-Java-MySQL-Sample/WebContent"]
 WORKDIR App42PaaS-Java-MySQL-Sample
 RUN mvn package
