@@ -5,7 +5,7 @@ WORKDIR /home
 RUN git clone https://github.com/shephertz/App42PaaS-Java-MySQL-Sample.git
 WORKDIR App42PaaS-Java-MySQL-Sample/WebContent
 RUN rm  Config.properties
-#COPY /home/HW_12/config/Config.properties .
+COPY . ./WebContent
 WORKDIR /home/App42PaaS-Java-MySQL-Sample
 RUN mvn package
 CMD /bin/sh
