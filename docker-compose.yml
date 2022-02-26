@@ -5,6 +5,7 @@ services:
     volumes:
       - Temp:/home/App42PaaS-Java-MySQL-Sample/target
       - DBt:/home/App42PaaS-Java-MySQL-Sample/WebContent/WEB_INF
+      - /home/HW_12/config:/home/App42PaaS-Java-MySQL-Sample/WebContent
   db:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
