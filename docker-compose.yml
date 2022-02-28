@@ -4,7 +4,7 @@ services:
     build: ./build
     volumes:
       - Temp:/home/App42/target
-      - Conf:/home/App42/WebContent
+      - Conf:/home/App42/WebContent/Config.properties
   db:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
