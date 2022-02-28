@@ -5,7 +5,6 @@ services:
     volumes:
       - Temp:/home/App42/target
       - Conf:/home/App42/WebContent
-      - DBt:/home/App42/WebContent/WEB-INF/lib
   db:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
@@ -14,8 +13,6 @@ services:
       MYSQL_ROOT_PASSWORD: 123
       MYSQL_DATABASE: 'dd'
       MYSQL_USER: 'user'
-    volumes:
-      - DBt:/var/lib/mysql/dd
   web:
     image: tomcat:latest
     ports:
