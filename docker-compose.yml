@@ -14,8 +14,6 @@ services:
       MYSQL_ROOT_PASSWORD: 123
       MYSQL_DATABASE: 'dd'
       MYSQL_USER: 'user'
-    ports:
-      - 8083:3306
     volumes:
       - DBt:/var/lib/mysql/dd
   web:
