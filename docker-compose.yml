@@ -4,7 +4,6 @@ services:
     build: ./build
     volumes:
       - Temp:/home/App42PaaS-Java-MySQL-Sample/target
-      - DBt:/home/App42PaaS-Java-MySQL-Sample/WebContent
       - Conf:/home/HW_12/build/config/
   db:
     image: mysql
@@ -12,8 +11,9 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 123
-    volumes:
-      - DBt:/var/lib/mysql
+      MYSQL_DATABASE: 'dd'
+      MYSQL_USER: 'user'
+
   web:
     image: tomcat:latest
     ports:
@@ -27,5 +27,4 @@ services:
 
 volumes:
   Temp:
-  DBt:
   Conf:
