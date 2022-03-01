@@ -13,8 +13,8 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 123
-      MYSQL_DATABASE: 'dd'
-      MYSQL_USER: 'user'
+      MYSQL_DATABASE: dd
+      MYSQL_USER: user
   web:
     image: tomcat:7.0
     ports:
