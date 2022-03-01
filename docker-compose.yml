@@ -7,6 +7,8 @@ services:
       - Conf:/home/App42/WebContent
   db:
     image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 123
