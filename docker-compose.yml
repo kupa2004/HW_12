@@ -6,15 +6,14 @@ services:
       - Temp:/home/App42/target
       - Conf:/home/App42/WebContent
   db:
-    image: mysql:8.0.28
-    command: --default-authentication-plugin=mysql_native_password
+    image: mariadb:10.3
     depends_on:
       - builder
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: 123
-      MYSQL_DATABASE: dd
-      MYSQL_USER: user
+      MARIADB_ROOT_PASSWORD=123
+      MARIADB_DATABASE=dd
+      MARIADB_USER=user
   web:
     image: tomcat:7.0
     ports:
