@@ -6,14 +6,13 @@ services:
       - Temp:/home/App42/target
       - Conf:/home/App42/WebContent
   db:
-    image: mariadb:10.1
-    depends_on:
-      - builder
+    image: mysql:5.7
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 123
       MYSQL_DATABASE: dd
       MYSQL_USER: user
+      MYSQL_PASSWORD: 123
   web:
     image: tomcat:7.0
     ports:
