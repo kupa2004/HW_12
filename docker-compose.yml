@@ -29,3 +29,4 @@ services:
 volumes:
   Temp:
   Conf:
+  db_data:
