@@ -14,9 +14,9 @@ services:
       MYSQL_DATABASE: 'dd'
       MYSQL_USER: 'user'
   web:
-    image: tomcat:latest
+    image: tomcat:7.0
     ports:
-      - 8083:8080
+      - 8084:8080
     depends_on:
       - builder
       - db
